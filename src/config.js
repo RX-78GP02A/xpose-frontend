@@ -1,1 +1,1 @@
-export const BASE_URL = '/xpose/api'
+export const BASE_URL = '/xpose/api';
