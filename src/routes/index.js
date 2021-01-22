@@ -1,19 +1,19 @@
-import React, { useEffect, useContext, useState } from 'react'
-import { Switch, Route, useLocation, Redirect, Router } from 'react-router-dom'
-import Axios from 'axios'
+import React, { useEffect, useContext, useState } from 'react';
+import { Switch, Route, useLocation, Redirect, Router } from 'react-router-dom';
+import Axios from 'axios';
 
-import { Provider as PostProvider } from '../context/Post'
-import { Provider as ProfileProvider } from '../context/Profile'
-import { Context as AuthContext } from '../context/Auth'
-import { LOGIN_USER } from '../context/actionTypes'
+import { Provider as PostProvider } from '../context/Post';
+import { Provider as ProfileProvider } from '../context/Profile';
+import { Context as AuthContext } from '../context/Auth';
+import { LOGIN_USER } from '../context/actionTypes';
 
-import { BASE_URL } from '../config'
+import { BASE_URL } from '../config';
 
-import HomePage from '../pages/Homepage'
-import ProfilePage from '../pages/Profile'
-import SearchPage from '../pages/Search'
-import RegisterPage from '../pages/Register'
-import LoginPage from '../pages/Login'
+import HomePage from '../pages/Homepage';
+import ProfilePage from '../pages/Profile';
+import SearchPage from '../pages/Search';
+import RegisterPage from '../pages/Register';
+import LoginPage from '../pages/Login';
 
 export default () => {
   const { authUser, setAuthUser } = useContext(AuthContext)
@@ -23,7 +23,7 @@ export default () => {
   const authRoutes = {
     '/': LoginPage,
     '/register': RegisterPage
-  }
+  };
 
   const getCookie = (name) => {
     const cookieName = name + '='
@@ -39,7 +39,7 @@ export default () => {
       }
     }
     return false
-  }
+  };
 
   useEffect(() => {
     const checkLogin = async () => {
