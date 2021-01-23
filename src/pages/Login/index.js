@@ -7,18 +7,18 @@ import Navbar from '../../components/Navbar';
 import { BASE_URL } from '../../config';
 import '../Register/style.css';
 
-import { Context as NotificationContext } from '../../context/Notification'
-import { Context as AuthContext } from '../../context/Auth'
-import { ADD_NOTI, LOGIN_USER } from '../../context/actionTypes'
+import { Context as NotificationContext } from '../../context/Notification';
+import { Context as AuthContext } from '../../context/Auth';
+import { ADD_NOTI, LOGIN_USER } from '../../context/actionTypes';
 
 export default () => {
-  const { setNotification } = useContext(NotificationContext)
-  const { setAuthUser } = useContext(AuthContext)
+  const { setNotification } = useContext(NotificationContext);
+  const { setAuthUser } = useContext(AuthContext);
 
   const [user, setUser] = useState({
     email: '',
     password: ''
-  })
+  });
 
   const [login, setLogin] = useState(false)
 
