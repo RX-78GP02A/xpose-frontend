@@ -57,14 +57,14 @@
 .save-btn button {
   cursor: pointer;
   padding: 0.5em 1em;
-  background: #4168b4;
-  border: 1px solid #4168b4;
+  background: #044052;
+  border: 1px solid #000000;
   border-radius: 3px;
   color: white;
   font-size: 0.8rem;
 }
 
 .save-btn button:hover {
-  background: #3057a5;
+  background: #06536b;
   border: 1px solid #3057a5;
 }

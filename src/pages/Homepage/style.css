@@ -1,6 +1,9 @@
 .container {
   max-width: 900px;
   width: 90%;
+
+  margin-bottom: 100px;
+  overscroll-behavior-y: none; 
 }
 
 .main-contents {

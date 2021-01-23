@@ -1,8 +1,15 @@
 .footer {
   text-align: center;
-  font-size: 0.8rem;
-  color: #999;
-  margin: 2em 0;
+  
+
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #044052;
+  color: #fff;
+  height: 2em;
 }
 
 .footer a {
@@ -13,4 +20,14 @@
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.footer a img {
+  height: 80%;
+  transform: translateY(13%);
+  padding-right: 10px;
+}
+.footer a .envelope {
+  height: 50%;
+  transform: translateY(-5%);
 }

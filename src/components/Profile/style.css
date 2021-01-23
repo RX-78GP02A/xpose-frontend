@@ -6,6 +6,10 @@
   padding: 1em 0.7em;
   border-radius: 3px;
   border: 1px solid #dddfe2;
+
+
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .image-container {
