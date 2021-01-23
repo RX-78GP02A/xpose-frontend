@@ -20,11 +20,11 @@ export default (props) => {
   // Post context
   const { posts, setPost } = useContext(PostContext)
   // Auth user context
-  const { authUser } = useContext(AuthContext)
+  const { authUser } = useContext(AuthContext);
   // State to store id of last post
-  const [currentId, setCurrentId] = useState(0)
+  const [currentId, setCurrentId] = useState(0);
   // State for no more post
-  const [loadMore, setLoadMore] = useState(true)
+  const [loadMore, setLoadMore] = useState(true);
 
   // Load all posts
   useEffect(() => {
@@ -88,4 +88,4 @@ export default (props) => {
       </div>
     </div>
   )
-}
+};
