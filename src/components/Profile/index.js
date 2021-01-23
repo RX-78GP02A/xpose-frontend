@@ -1,12 +1,12 @@
-import React, { useState, Profiler, useContext } from 'react'
-import { Link, useRouteMatch } from 'react-router-dom'
+import React, { useState, Profiler, useContext } from 'react';
+import { Link, useRouteMatch } from 'react-router-dom';
 
-import Avatar from '../../assets/images/avatar.jpg'
-import ProfileButton from '../../components/Follow'
+import Avatar from '../../assets/images/avatar.jpg';
+import ProfileButton from '../../components/Follow';
 
-import { Context as ProfileContext } from '../../context/Profile'
-import { Context as AuthContext } from '../../context/Auth'
-import { ADD_FOLLOWER, REMOVE_FOLLOWER } from '../../context/actionTypes'
+import { Context as ProfileContext } from '../../context/Profile';
+import { Context as AuthContext } from '../../context/Auth';
+import { ADD_FOLLOWER, REMOVE_FOLLOWER } from '../../context/actionTypes';
 
 import './style.css'
 
