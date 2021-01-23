@@ -15,8 +15,8 @@ export default (props) => {
   // Notification context
   const { setNotification } = useContext(NotificationContext)
   // State for no more post
-  const [loadMore, setLoadMore] = useState(true)
-  const [search, setSearch] = useState([])
+  const [loadMore, setLoadMore] = useState(true);
+  const [search, setSearch] = useState([]);
 
   // Search user
   const searchUser = async (event) => {
