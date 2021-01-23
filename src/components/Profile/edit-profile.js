@@ -16,22 +16,22 @@ import './edit-profile.css';
 
 export default () => {
   // Ref for input file
-  const profilePic = useRef(null)
+  const profilePic = useRef(null);
 
   // Context
-  const { setNotification } = useContext(NotificationContext)
-  const { profile, setProfile } = useContext(ProfileContext)
-  const { setAuthUser } = useContext(AuthContext)
+  const { setNotification } = useContext(NotificationContext);
+  const { profile, setProfile } = useContext(ProfileContext);
+  const { setAuthUser } = useContext(AuthContext);
 
   // To store the updated data
-  const [profileInfo, setProfileInfo] = useState({ ...profile.user })
-  const [updatedData, setUpdatedData] = useState({})
-  const [uploading, setUploading] = useState(false)
-  const [password, setPassword] = useState({})
+  const [profileInfo, setProfileInfo] = useState({ ...profile.user });
+  const [updatedData, setUpdatedData] = useState({});
+  const [uploading, setUploading] = useState(false);
+  const [password, setPassword] = useState({});
 
   // Function to run the ref
   const selectFile = () => {
-    profilePic.current.click()
+    profilePic.current.click();
   }
 
   // Upload profile pic
@@ -69,7 +69,7 @@ export default () => {
         }
       })
     }
-  }
+  };
 
   // Update data
   const updateDetails = (event) => {
@@ -81,7 +81,7 @@ export default () => {
       ...profileInfo,
       [event.target.name]: event.target.value
     })
-  }
+  };
 
   // Update data
   const updatePassword = (event) => {
@@ -89,7 +89,7 @@ export default () => {
       ...password,
       [event.target.name]: event.target.value
     })
-  }
+  };
 
   // Save changed details
   const saveDetails = async () => {
@@ -149,7 +149,7 @@ export default () => {
         }
       })
     }
-  }
+  };
 
   // Save password
   const savePassword = async () => {
@@ -183,14 +183,14 @@ export default () => {
         }
       })
     }
-  }
+  };
 
   // Remove Picture
   const removePic = () => {
     setUpdatedData({ ...updatedData, avatar: '' })
     setProfileInfo({ ...profileInfo, avatar: '' })
     document.getElementById('avatar').src = Avatar
-  }
+  };
 
   return (
     <div>
@@ -290,4 +290,4 @@ export default () => {
       </Card>
     </div>
   )
-}
+};
