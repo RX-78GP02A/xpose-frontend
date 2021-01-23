@@ -1,9 +1,9 @@
 import React, { useEffect, useContext, useState } from 'react'
 import Axios from 'axios'
-import { v1 as genId } from 'uuid'
+import { v1 as genId } from 'uuid';
 
-import Navbar from '../../components/Navbar'
-import Newpost from '../../components/Newpost'
+import Navbar from '../../components/Navbar';
+import Newpost from '../../components/Newpost';
 import Post from '../../components/Post';
 import './style.css';
 import { BASE_URL } from '../../config';
