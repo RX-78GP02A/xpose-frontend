@@ -1,8 +1,8 @@
-import React, { useEffect, useContext, useState } from 'react'
-import Axios from 'axios'
-import { v1 as genId } from 'uuid'
+import React, { useEffect, useContext, useState } from 'react';
+import Axios from 'axios';
+import { v1 as genId } from 'uuid';
 
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar';
 import User from '../../components/Search';
 import './style.css';
 import { BASE_URL } from '../../config';
