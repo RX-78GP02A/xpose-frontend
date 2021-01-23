@@ -65,7 +65,7 @@ export default () => {
         }
       })
     }
-  }
+  };
 
   // To fetch user details
   const getUserDetails = async () => {
@@ -83,7 +83,7 @@ export default () => {
       setCheckUser(false)
     }
     setLoading(false)
-  }
+  };
 
   useEffect(() => {
     getUserDetails()
@@ -144,4 +144,4 @@ export default () => {
       </div>
     </div>
   )
-}
+};
