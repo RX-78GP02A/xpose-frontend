@@ -3,16 +3,16 @@ import { v1 as genId } from 'uuid';
 import Axios from 'axios';
 
 import { Card, CardBody, CardHeader, CardTitle } from '../../assets/css/styled-css';
-import Loader from '../../assets/images/loader.svg'
-import Avatar from '../../assets/images/avatar.jpg'
-import { BASE_URL } from '../../config'
+import Loader from '../../assets/images/loader.svg';
+import Avatar from '../../assets/images/avatar.jpg';
+import { BASE_URL } from '../../config';
 
-import { Context as NotificationContext } from '../../context/Notification'
-import { Context as ProfileContext } from '../../context/Profile'
-import { Context as AuthContext } from '../../context/Auth'
-import { ADD_NOTI, UPDATE_PROFILE, UPDATE_AUTH_USER } from '../../context/actionTypes'
+import { Context as NotificationContext } from '../../context/Notification';
+import { Context as ProfileContext } from '../../context/Profile';
+import { Context as AuthContext } from '../../context/Auth';
+import { ADD_NOTI, UPDATE_PROFILE, UPDATE_AUTH_USER } from '../../context/actionTypes';
 
-import './edit-profile.css'
+import './edit-profile.css';
 
 export default () => {
   // Ref for input file
