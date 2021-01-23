@@ -1,19 +1,19 @@
-import React, { useContext, useEffect } from 'react'
-import { v1 as genId } from 'uuid'
-import Axios from 'axios'
+import React, { useContext, useEffect } from 'react';
+import { v1 as genId } from 'uuid';
+import Axios from 'axios';
 
-import './style.css'
-import { BASE_URL } from '../../config'
-import User from '../../components/User'
-import { Card, CardHeader, CardTitle, CardBody } from '../../assets/css/styled-css'
+import './style.css';
+import { BASE_URL } from '../../config';
+import User from '../../components/User';
+import { Card, CardHeader, CardTitle, CardBody } from '../../assets/css/styled-css';
 
-import { Context as ProfileContext } from '../../context/Profile'
-import { Context as NotificationContext } from '../../context/Notification'
-import { ADD_NOTI, SET_FOLLOWING } from '../../context/actionTypes'
+import { Context as ProfileContext } from '../../context/Profile';
+import { Context as NotificationContext } from '../../context/Notification';
+import { ADD_NOTI, SET_FOLLOWING } from '../../context/actionTypes';
 
 export default (props) => {
-  const { profile, setProfile } = useContext(ProfileContext)
-  const { setNotification } = useContext(NotificationContext)
+  const { profile, setProfile } = useContext(ProfileContext);
+  const { setNotification } = useContext(NotificationContext);
 
   useEffect(() => {
     const fetchFollowing = async () => {
