@@ -34,7 +34,7 @@ export default () => {
   const { profile, setProfile } = useContext(ProfileContext)
   const { setNotification } = useContext(NotificationContext)
   const { posts, setPost } = useContext(PostContext)
-  const { authUser } = useContext(AuthContext)
+  const { authUser } = useContext(AuthContext);
 
   // To load user posts
   const getPosts = async (userId, current) => {
@@ -65,7 +65,7 @@ export default () => {
         }
       })
     }
-  }
+  };
 
   // To fetch user details
   const getUserDetails = async () => {
@@ -83,7 +83,7 @@ export default () => {
       setCheckUser(false)
     }
     setLoading(false)
-  }
+  };
 
   useEffect(() => {
     getUserDetails()
@@ -144,4 +144,4 @@ export default () => {
       </div>
     </div>
   )
-}
+};
