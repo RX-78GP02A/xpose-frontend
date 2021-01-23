@@ -1,11 +1,11 @@
-import React, { useState, useContext } from 'react'
-import Axios from 'axios'
-import { v1 as genId } from 'uuid'
-import moment from 'moment'
-import { Link } from 'react-router-dom'
+import React, { useState, useContext } from 'react';
+import Axios from 'axios';
+import { v1 as genId } from 'uuid';
+import moment from 'moment';
+import { Link } from 'react-router-dom';
 
-import Avatar from '../../assets/images/avatar.jpg'
-import { BASE_URL } from '../../config'
+import Avatar from '../../assets/images/avatar.jpg';
+import { BASE_URL } from '../../config';
 import './style.css';
 
 import { Context as NotificationContext } from '../../context/Notification';
