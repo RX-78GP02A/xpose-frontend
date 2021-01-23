@@ -67,7 +67,7 @@ export default () => {
         }
       })
     }
-  }
+  };
 
   return login ? (
     <Redirect to='/home' />
