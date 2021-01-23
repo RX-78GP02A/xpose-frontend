@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 
-import { Card, CardBody, Icon } from '../../assets/css/styled-css'
-import { faTimesCircle, faCheckCircle, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { Context as NotificationContext } from '../../context/Notification'
-import { REMOVE_NOTI } from '../../context/actionTypes'
+import { Card, CardBody, Icon } from '../../assets/css/styled-css';
+import { faTimesCircle, faCheckCircle, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Context as NotificationContext } from '../../context/Notification';
+import { REMOVE_NOTI } from '../../context/actionTypes';
 
-import './style.css'
+import './style.css';
 
 export const Notification = ({ notification, index, dispatch }) => {
   return (
@@ -29,7 +29,7 @@ export const Notification = ({ notification, index, dispatch }) => {
       </CardBody>
     </Card>
   )
-}
+};
 
 export default () => {
   const { notifications, setNotification } = useContext(NotificationContext)
@@ -42,4 +42,4 @@ export default () => {
       </div>
     </div>
   )
-}
+};
