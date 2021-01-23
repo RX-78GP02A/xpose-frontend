@@ -1,13 +1,13 @@
-import React, { useEffect, useState, useContext } from 'react'
-import { Link, useParams, useRouteMatch, Switch, Route, Redirect } from 'react-router-dom'
-import Axios from 'axios'
-import { v1 as genId } from 'uuid'
-import './style.css'
+import React, { useEffect, useState, useContext } from 'react';
+import { Link, useParams, useRouteMatch, Switch, Route, Redirect } from 'react-router-dom';
+import Axios from 'axios';
+import { v1 as genId } from 'uuid';
+import './style.css';
 
-import { BASE_URL } from '../../config'
-import ProfileSection from '../../components/Profile'
-import Navbar from '../../components/Navbar'
-import Post from '../../components/Post'
+import { BASE_URL } from '../../config';
+import ProfileSection from '../../components/Profile';
+import Navbar from '../../components/Navbar';
+import Post from '../../components/Post';
 import Followers from '../Followers'
 import Following from '../Following'
 import EditProfile from '../../components/Profile/edit-profile'
