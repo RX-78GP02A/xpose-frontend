@@ -1,9 +1,7 @@
-import styled, { css, keyframes } from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styled, { css, keyframes } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-/**
- * Card component styles
- */
+// Card component styles
 const changeColor = keyframes`
   from {background-color: white;}
   to {background-color: #F8DFDA;}
@@ -67,9 +65,7 @@ export const Icon = styled(FontAwesomeIcon)`
     `}
 `
 
-/**
- * Blue Button
- */
+// Blue Button
 export const Btn = styled.button`
   padding: ${(props) => props.padding};
   width: ${(props) => props.width};
