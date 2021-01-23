@@ -22,11 +22,7 @@ import { SET_PROFILE, ADD_NOTI, SET_POSTS, RESET } from '../../context/actionTyp
 export default () => {
   const { username } = useParams();
   const { url, path } = useRouteMatch();
-  /**
-   * loading: To check if user checking is completed
-   * checkUser: To check if user is valid or not
-   * loadMore: To load more posts
-   */
+  
   const [loading, setLoading] = useState(true);
   const [checkUser, setCheckUser] = useState(true);
   const [loadMore, setLoadMore] = useState(true);
