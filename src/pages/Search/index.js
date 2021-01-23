@@ -20,21 +20,21 @@ import { Context as AuthContext } from '../../context/Auth';
 import { SET_PROFILE, ADD_NOTI, SET_POSTS, RESET } from '../../context/actionTypes';
 
 export default () => {
-  const { username } = useParams()
-  const { url, path } = useRouteMatch()
+  const { username } = useParams();
+  const { url, path } = useRouteMatch();
   /**
    * loading: To check if user checking is completed
    * checkUser: To check if user is valid or not
    * loadMore: To load more posts
    */
-  const [loading, setLoading] = useState(true)
-  const [checkUser, setCheckUser] = useState(true)
-  const [loadMore, setLoadMore] = useState(true)
+  const [loading, setLoading] = useState(true);
+  const [checkUser, setCheckUser] = useState(true);
+  const [loadMore, setLoadMore] = useState(true);
 
-  const { profile, setProfile } = useContext(ProfileContext)
-  const { setNotification } = useContext(NotificationContext)
-  const { posts, setPost } = useContext(PostContext)
-  const { authUser } = useContext(AuthContext)
+  const { profile, setProfile } = useContext(ProfileContext);
+  const { setNotification } = useContext(NotificationContext);
+  const { posts, setPost } = useContext(PostContext);
+  const { authUser } = useContext(AuthContext);
 
   // To load user posts
   const getPosts = async (userId, current) => {
