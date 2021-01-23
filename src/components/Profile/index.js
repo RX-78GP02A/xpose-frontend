@@ -11,10 +11,10 @@ import { ADD_FOLLOWER, REMOVE_FOLLOWER } from '../../context/actionTypes'
 import './style.css'
 
 export default (props) => {
-  const { url } = useRouteMatch()
+  const { url } = useRouteMatch();
 
-  const { authUser } = useContext(AuthContext)
-  const { profile, setProfile } = useContext(ProfileContext)
+  const { authUser } = useContext(AuthContext);
+  const { profile, setProfile } = useContext(ProfileContext);
 
   // Add follower
   const follow = (data) => {
@@ -29,7 +29,7 @@ export default (props) => {
         users: data.users
       }
     })
-  }
+  };
 
   // Unfollow user
   const unfollow = (data) => {
@@ -41,7 +41,7 @@ export default (props) => {
         isFollowing: data.isFollowing
       }
     })
-  }
+  };
 
   return (
     <div className='profile-container'>
@@ -83,4 +83,4 @@ export default (props) => {
       </div>
     </div>
   )
-}
+};
