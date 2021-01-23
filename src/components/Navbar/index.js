@@ -16,7 +16,7 @@ export default (props) => {
   const { authUser, setAuthUser } = useContext(AuthContext)
   const { setNotification } = useContext(NotificationContext)
 
-  const [showDropdown, setDropdown] = useState(false)
+  const [showDropdown, setDropdown] = useState(false);
 
   const logout = (event) => {
     event.preventDefault()
@@ -36,7 +36,7 @@ export default (props) => {
       }
     })
     return <Redirect to='/' />
-  }
+  };
 
   return (
     <header className='header'>
@@ -80,4 +80,4 @@ export default (props) => {
       </div>
     </header>
   )
-}
+};
