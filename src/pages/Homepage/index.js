@@ -1,5 +1,5 @@
-import React, { useEffect, useContext, useState } from 'react'
-import Axios from 'axios'
+import React, { useEffect, useContext, useState } from 'react';
+import Axios from 'axios';
 import { v1 as genId } from 'uuid';
 
 import Navbar from '../../components/Navbar';
