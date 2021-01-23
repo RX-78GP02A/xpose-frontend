@@ -1,11 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { v1 as genId } from 'uuid';
 import Axios from 'axios';
-import { Redirect, Link } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom';
 
-import Navbar from '../../components/Navbar'
-import { BASE_URL } from '../../config'
-import '../Register/style.css'
+import Navbar from '../../components/Navbar';
+import { BASE_URL } from '../../config';
+import '../Register/style.css';
 
 import { Context as NotificationContext } from '../../context/Notification'
 import { Context as AuthContext } from '../../context/Auth'
