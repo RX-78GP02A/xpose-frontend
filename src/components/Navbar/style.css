@@ -10,7 +10,7 @@
 
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 960px;
   display: flex;
   justify-content: space-between;
@@ -48,11 +48,13 @@
 .dropdown-img img {
   width: auto;
   height: 100%;
-  border-radius: 3px;
+  border-radius: 10px;
+  object-fit: contain;
+  margin: 0;
 }
 
 .dropdown-header p {
-  margin: 0 0.5em;
+  margin: 0 1.5em;
   font-size: 0.9rem;
 }
 

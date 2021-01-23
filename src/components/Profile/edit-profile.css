@@ -13,7 +13,7 @@
 .edit-pic svg {
   height: 100%;
   width: auto;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 3px;
 }
 
@@ -25,6 +25,9 @@
 
 .edit-pic p:hover {
   text-decoration: underline;
+}
+.edit-change-links p {
+  text-align: center;
 }
 
 .input-row {

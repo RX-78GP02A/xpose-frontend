@@ -9,8 +9,8 @@
 }
 
 .image-container {
-  width: 6em;
-  height: 6em;
+  width: 4em;
+  height: 4em;
   border: 5px solid whitesmoke;
   border-radius: 3px;
   display: flex;
@@ -20,7 +20,7 @@
 .image-container img {
   width: auto;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .basic-info {

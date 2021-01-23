@@ -14,7 +14,7 @@
 .profile-pic img {
   width: auto;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   margin: 0;
 }
 

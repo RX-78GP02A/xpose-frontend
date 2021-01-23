@@ -46,7 +46,7 @@ export default (props) => {
   return (
     <div className='profile-container'>
       {/* Image */}
-      <div class='image-container'>
+      <div className='image-container'>
         <img src={profile.user.avatar || Avatar} alt={profile.user.username} />
       </div>
       {/* Profile info */}

@@ -208,14 +208,18 @@ export default () => {
                   <img id='avatar' src={profileInfo.avatar || Avatar} alt='name' />
                 )}
               </div>
-              <p onClick={selectFile}>Change profile picture | </p>
+              <div className='edit-change-links'>
+              <p onClick={selectFile}>Change profile picture</p>
+              <p> | </p> 
               <p onClick={removePic}>Remove pic</p>
+              
               <input
                 type='file'
                 style={{ display: 'none' }}
                 ref={profilePic}
                 onChange={changePic}
               />
+            </div>
             </div>
             {/* <div className='input-row'>
             <label>Username</label>
