@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import './style.css'
+import './style.css';
 
 export default () => {
   return (
@@ -10,4 +10,4 @@ export default () => {
       </p>
     </div>
   )
-}
+};
