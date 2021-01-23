@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useContext } from 'react'
-import { Link, useParams, useRouteMatch, Switch, Route, Redirect } from 'react-router-dom'
-import Axios from 'axios'
-import { v1 as genId } from 'uuid'
-import './style.css'
+import React, { useEffect, useState, useContext } from 'react';
+import { Link, useParams, useRouteMatch, Switch, Route, Redirect } from 'react-router-dom';
+import Axios from 'axios';
+import { v1 as genId } from 'uuid';
+import './style.css';
 
 import { BASE_URL } from '../../config'
 import ProfileSection from '../../components/Profile'
