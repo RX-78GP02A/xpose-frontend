@@ -24,14 +24,14 @@ export default () => {
 
   const updateUser = (event) => {
     setUser({ ...user, [event.target.name]: event.target.value })
-  }
+  };
 
   const setCookie = (name, value) => {
     const d = new Date()
     d.setTime(d.getTime() + 3 * 24 * 60 * 60 * 1000)
     const expires = 'expires=' + d.toUTCString()
     document.cookie = name + '=' + value + ';' + expires + ';path=/'
-  }
+  };
 
   // Login user
   const loginUser = async (event) => {
