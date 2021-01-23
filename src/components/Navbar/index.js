@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react'
-import { Icon } from '../../assets/css/styled-css'
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
-import { Link, Redirect } from 'react-router-dom'
-import Axios from 'axios'
+import React, { useState, useContext } from 'react';
+import { Icon } from '../../assets/css/styled-css';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { Link, Redirect } from 'react-router-dom';
+import Axios from 'axios';
 import { v1 as genId } from 'uuid';
 
 import './style.css';
