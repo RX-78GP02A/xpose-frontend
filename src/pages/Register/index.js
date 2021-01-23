@@ -1,15 +1,15 @@
-import React, { useState, useContext } from 'react'
-import { v1 as genId } from 'uuid'
-import Axios from 'axios'
-import { Link, Redirect } from 'react-router-dom'
+import React, { useState, useContext } from 'react';
+import { v1 as genId } from 'uuid';
+import Axios from 'axios';
+import { Link, Redirect } from 'react-router-dom';
 
-import Navbar from '../../components/Navbar'
-import { BASE_URL } from '../../config'
-import './style.css'
+import Navbar from '../../components/Navbar';
+import { BASE_URL } from '../../config';
+import './style.css';
 
-import { Context as NotificationContext } from '../../context/Notification'
-import { Context as AuthContext } from '../../context/Auth'
-import { ADD_NOTI, LOGIN_USER } from '../../context/actionTypes'
+import { Context as NotificationContext } from '../../context/Notification';
+import { Context as AuthContext } from '../../context/Auth';
+import { ADD_NOTI, LOGIN_USER } from '../../context/actionTypes';
 
 export default () => {
   const { setNotification } = useContext(NotificationContext)
@@ -22,18 +22,18 @@ export default () => {
     email: '',
     username: '',
     password: ''
-  })
+  });
 
   const updateUser = (event) => {
     setUser({ ...user, [event.target.name]: event.target.value })
-  }
+  };
 
   const setCookie = (name, value) => {
     const d = new Date()
     d.setTime(d.getTime() + 3 * 24 * 60 * 60 * 1000)
     const expires = 'expires=' + d.toUTCString()
     document.cookie = name + '=' + value + ';' + expires + ';path=/'
-  }
+  };
 
   // Register user
   const registerUser = async (event) => {
@@ -72,7 +72,7 @@ export default () => {
         }
       })
     }
-  }
+  };
 
   return login ? (
     <Redirect to='/home' />
@@ -139,4 +139,4 @@ export default () => {
       </div>
     </div>
   )
-}
+};
