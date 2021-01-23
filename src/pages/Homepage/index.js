@@ -4,21 +4,21 @@ import { v1 as genId } from 'uuid'
 
 import Navbar from '../../components/Navbar'
 import Newpost from '../../components/Newpost'
-import Post from '../../components/Post'
-import './style.css'
-import { BASE_URL } from '../../config'
-import ProfileSidebar from '../../components/Sidebar/profile'
+import Post from '../../components/Post';
+import './style.css';
+import { BASE_URL } from '../../config';
+import ProfileSidebar from '../../components/Sidebar/profile';
 
-import { Context as NotificationContext } from '../../context/Notification'
-import { Context as AuthContext } from '../../context/Auth'
-import { Context as PostContext } from '../../context/Post'
-import { ADD_NOTI, SET_POSTS } from '../../context/actionTypes'
+import { Context as NotificationContext } from '../../context/Notification';
+import { Context as AuthContext } from '../../context/Auth';
+import { Context as PostContext } from '../../context/Post';
+import { ADD_NOTI, SET_POSTS } from '../../context/actionTypes';
 
 export default (props) => {
   // Notification context
-  const { setNotification } = useContext(NotificationContext)
+  const { setNotification } = useContext(NotificationContext);
   // Post context
-  const { posts, setPost } = useContext(PostContext)
+  const { posts, setPost } = useContext(PostContext);
   // Auth user context
   const { authUser } = useContext(AuthContext);
   // State to store id of last post
