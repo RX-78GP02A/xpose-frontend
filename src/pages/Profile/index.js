@@ -14,7 +14,7 @@ import EditProfile from '../../components/Profile/edit-profile';
 import SidebarNav from '../../components/Sidebar/navbar';
 
 import { Context as ProfileContext } from '../../context/Profile';
-import { Context as NotificationContext } from '../../context/Notification'
+import { Context as NotificationContext } from '../../context/Notification';
 import { Context as PostContext } from '../../context/Post';
 import { Context as AuthContext } from '../../context/Auth';
 import { SET_PROFILE, ADD_NOTI, SET_POSTS, RESET } from '../../context/actionTypes';
