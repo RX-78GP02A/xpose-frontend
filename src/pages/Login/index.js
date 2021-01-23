@@ -1,6 +1,6 @@
-import React, { useState, useContext } from 'react'
-import { v1 as genId } from 'uuid'
-import Axios from 'axios'
+import React, { useState, useContext } from 'react';
+import { v1 as genId } from 'uuid';
+import Axios from 'axios';
 import { Redirect, Link } from 'react-router-dom'
 
 import Navbar from '../../components/Navbar'
@@ -103,4 +103,4 @@ export default () => {
       </div>
     </div>
   )
-}
+};
