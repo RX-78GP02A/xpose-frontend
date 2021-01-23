@@ -100,7 +100,7 @@ export default ({ postId }) => {
         }
       })
     }
-  }
+  };
 
   // Unlike post
   const unLikePost = async () => {
@@ -133,7 +133,7 @@ export default ({ postId }) => {
         }
       })
     }
-  }
+  };
 
   const deleteImages = async (images) => {
     for (const image of images) {
@@ -145,7 +145,7 @@ export default ({ postId }) => {
       }
     }
     return true
-  }
+  };
 
   // Delete post
   const deletePost = async () => {
@@ -222,4 +222,4 @@ export default ({ postId }) => {
       </CardBody>
     </Card>
   )
-}
+};
