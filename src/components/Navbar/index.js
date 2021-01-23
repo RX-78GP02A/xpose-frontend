@@ -3,18 +3,18 @@ import { Icon } from '../../assets/css/styled-css'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { Link, Redirect } from 'react-router-dom'
 import Axios from 'axios'
-import { v1 as genId } from 'uuid'
+import { v1 as genId } from 'uuid';
 
-import './style.css'
-import Avatar from '../../assets/images/avatar.jpg'
+import './style.css';
+import Avatar from '../../assets/images/avatar.jpg';
 
-import { Context as AuthContext } from '../../context/Auth'
-import { Context as NotificationContext } from '../../context/Notification'
-import { LOGOUT_USER, ADD_NOTI } from '../../context/actionTypes'
+import { Context as AuthContext } from '../../context/Auth';
+import { Context as NotificationContext } from '../../context/Notification';
+import { LOGOUT_USER, ADD_NOTI } from '../../context/actionTypes';
 
 export default (props) => {
-  const { authUser, setAuthUser } = useContext(AuthContext)
-  const { setNotification } = useContext(NotificationContext)
+  const { authUser, setAuthUser } = useContext(AuthContext);
+  const { setNotification } = useContext(NotificationContext);
 
   const [showDropdown, setDropdown] = useState(false);
 
