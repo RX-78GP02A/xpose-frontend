@@ -1,5 +1,5 @@
 .header {
-  background: #4168b4;
+  background: #08314d;
   margin: 0;
   height: 3.5em;
   position: fixed;
@@ -46,9 +46,9 @@
 }
 
 .dropdown-img img {
-  width: auto;
+  width: 100;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 3px;
   object-fit: contain;
   margin: 0;
 }
