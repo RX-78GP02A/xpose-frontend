@@ -1,9 +1,9 @@
-import React, { useContext, Profiler } from 'react'
-import Axios from 'axios'
-import { Link, useRouteMatch } from 'react-router-dom'
-import { v1 as genId } from 'uuid'
+import React, { useContext, Profiler } from 'react';
+import Axios from 'axios';
+import { Link, useRouteMatch } from 'react-router-dom';
+import { v1 as genId } from 'uuid';
 
-import { BASE_URL } from '../../config'
+import { BASE_URL } from '../../config';
 import './style.css';
 
 import { ADD_NOTI } from '../../context/actionTypes';
