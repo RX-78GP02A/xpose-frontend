@@ -1,0 +1,47 @@
+.p-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.p-contents {
+  width: 100%;
+  padding-top: 4.2em;
+}
+
+.user-contents {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-contents {
+  width: 100%;
+}
+
+.profile-nav {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .user-contents {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .post-contents {
+    width: 66%;
+  }
+
+  .profile-nav {
+    display: block;
+    width: 32%;
+    background: white;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+  }
+}
+
+.center {
+  text-align: center;
+}
