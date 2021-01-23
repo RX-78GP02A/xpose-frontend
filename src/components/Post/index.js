@@ -1,20 +1,20 @@
-import React, { useState, useContext } from 'react'
-import moment from 'moment'
-import { v1 as genId } from 'uuid'
-import Axios from 'axios'
+import React, { useState, useContext } from 'react';
+import moment from 'moment';
+import { v1 as genId } from 'uuid';
+import Axios from 'axios';
 import {
   faChevronCircleLeft,
   faChevronCircleRight,
   faHeart as liked
-} from '@fortawesome/free-solid-svg-icons'
-import { faHeart as like, faComment, faTrashAlt } from '@fortawesome/free-regular-svg-icons'
-import Comments from '../Comment'
-import { Link } from 'react-router-dom'
+} from '@fortawesome/free-solid-svg-icons';
+import { faHeart as like, faComment, faTrashAlt } from '@fortawesome/free-regular-svg-icons';
+import Comments from '../Comment';
+import { Link } from 'react-router-dom';
 
-import { Card, CardBody, Icon } from '../../assets/css/styled-css'
-import './style.css'
-import avatar from '../../assets/images/avatar.jpg'
-import { BASE_URL } from '../../config'
+import { Card, CardBody, Icon } from '../../assets/css/styled-css';
+import './style.css';
+import avatar from '../../assets/images/avatar.jpg';
+import { BASE_URL } from '../../config';
 
 import { Context as PostContext } from '../../context/Post';
 import { Context as NotificationContext } from '../../context/Notification';
