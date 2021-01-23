@@ -16,10 +16,10 @@ import './style.css'
 import avatar from '../../assets/images/avatar.jpg'
 import { BASE_URL } from '../../config'
 
-import { Context as PostContext } from '../../context/Post'
-import { Context as NotificationContext } from '../../context/Notification'
-import { Context as AuthContext } from '../../context/Auth'
-import { ADD_NOTI, LIKE_POST, UNLIKE_POST, DELETE_POST } from '../../context/actionTypes'
+import { Context as PostContext } from '../../context/Post';
+import { Context as NotificationContext } from '../../context/Notification';
+import { Context as AuthContext } from '../../context/Auth';
+import { ADD_NOTI, LIKE_POST, UNLIKE_POST, DELETE_POST } from '../../context/actionTypes';
 
 const PreviewContainer = ({ image, left, right, single }) => {
   return (
@@ -41,33 +41,33 @@ const PreviewContainer = ({ image, left, right, single }) => {
       )}
     </div>
   )
-}
+};
 
 export default ({ postId }) => {
   /**
    * showIndex: Index of the image to be shown in the post
    * showComment: To show the comment container
    */
-  const [showIndex, setShowIndex] = useState(0)
-  const [showComment, setShowComment] = useState(false)
-  const [deleting, setDeleting] = useState(false)
+  const [showIndex, setShowIndex] = useState(0);
+  const [showComment, setShowComment] = useState(false);
+  const [deleting, setDeleting] = useState(false);
   // Post context
-  const { posts, setPost } = useContext(PostContext)
+  const { posts, setPost } = useContext(PostContext);
   // Notification context
-  const { setNotification } = useContext(NotificationContext)
+  const { setNotification } = useContext(NotificationContext);
   // Auth Context
-  const { authUser } = useContext(AuthContext)
+  const { authUser } = useContext(AuthContext);
 
   // Preview container left
   const moveLeft = () => {
     if (showIndex > 0) setShowIndex(showIndex - 1)
     else setShowIndex(posts.posts.contents[postId].images.length - 1)
-  }
+  };
   // Preview container right
   const moveRight = () => {
     if (showIndex < posts.posts.contents[postId].images.length - 1) setShowIndex(showIndex + 1)
     else setShowIndex(0)
-  }
+  };
 
   // Like post
   const likePost = async () => {
