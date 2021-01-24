@@ -72,7 +72,7 @@ export const Btn = styled.button`
   font-size: 0.8em;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #333;
+  color: #065c4d;;
   border-radius: 3px;
   cursor: pointer;
   background: #f5f6f7;
@@ -87,15 +87,15 @@ export const Btn = styled.button`
   ${(props) =>
     props.blue &&
     css`
-      background: #4168b4;
-      border: 1px solid #4168b4;
+      background: #065c4d;;
+      border: 1px solid #000000;
       color: white;
       &:hover {
-        background: #365899;
+        background: #0a816d;
       }
       &:disabled {
         background: #9db7d2;
-        border: 1px solid #9db7d2;
+        border: 1px solid ##000000;
         cursor: default;
       }
     `};

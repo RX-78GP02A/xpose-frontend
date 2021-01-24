@@ -29,13 +29,13 @@
 }
 
 .follow {
-  background: #4168b4;
-  border: 1px solid #4168b4;
+  background: #065c4d;
+  border: 1px solid #000000;
   border-radius: 3px;
   color: #fff;
 }
 
 .follow:hover {
-  background: #375eac;
-  border: 1px solid #375eac;
+  background: #0a816d;
+  border: 1px solid #000000;
 }
