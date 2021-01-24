@@ -89,9 +89,7 @@ export default () => {
                 type='password'
                 name='password'
                 onChange={updateUser}
-                value={user.password}
-                required
-              />
+                value={user.password} required />
             </div>
             <div className='form-row'>
               <button>Login</button>
