@@ -4,3 +4,4 @@ dist
 .env
 credentials.csv
 test_data.sql
+.vercel
