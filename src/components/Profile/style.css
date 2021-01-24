@@ -6,10 +6,6 @@
   padding: 1em 0.7em;
   border-radius: 3px;
   border: 1px solid #dddfe2;
-
-
-  max-width: 100%;
-  overflow: hidden;
 }
 
 .image-container {
@@ -20,7 +16,7 @@
   justify-content: center;
   border-radius: 3px;
   object-fit: contain;
-  margin: 0;
+  margin: 0; 
 }
 
 .image-container img {

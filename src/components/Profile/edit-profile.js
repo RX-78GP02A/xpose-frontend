@@ -209,7 +209,7 @@ export default () => {
                 )}
               </div>
               <div className='edit-change-links'>
-              <p onClick={selectFile}>Change profile picture     |</p>
+              <p onClick={selectFile}>Change profile picture</p>
               <p onClick={removePic}>Remove pic</p>
               
               <input

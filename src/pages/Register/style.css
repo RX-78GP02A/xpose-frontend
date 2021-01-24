@@ -59,3 +59,18 @@
 .footer-text a:hover {
   text-decoration: underline;
 }
+
+.heading-text {
+  font-size: 0.9rem;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.heading-text a {
+  text-decoration: none;
+  color: #065c4d;;
+}
+
+.heading-text a:hover {
+  text-decoration: underline;
+}
