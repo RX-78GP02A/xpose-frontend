@@ -21,16 +21,18 @@
 }
 
 .user-pic {
-  width: 3em;
-  height: 3em;
-  border: 5px solid whitesmoke;
-  display: flex;
-  justify-content: center;
+  width: 5.5em;
+  height: 5.5em;
+  margin: 0;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .user-pic img {
   width: auto;
   height: 100%;
+  object-fit: contain;
+  margin: 0;
 }
 
 .sidebar-nav {

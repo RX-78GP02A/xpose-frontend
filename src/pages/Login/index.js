@@ -76,7 +76,7 @@ export default () => {
       <Navbar />
       <div className='auth-contents'>
         <div className='form-contents'>
-        <p className='heading-text'>"Welcome to Xpose a social photo journalism app."</p>
+        <p className='heading-text'>Welcome to Xpose a social photo journalism application.</p>
           <h1 className='heading'>Login</h1>
           <form onSubmit={loginUser}>
             <div className='form-row'>
