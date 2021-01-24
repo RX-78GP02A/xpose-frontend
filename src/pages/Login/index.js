@@ -86,8 +86,7 @@ export default () => {
             <div className='form-row'>
               <label>Password</label>
               <input
-                type='password'
-                name='password' onChange={updateUser} value={user.password} required />
+                type='password' name='password' onChange={updateUser} value={user.password} required />
             </div>
             <div className='form-row'>
               <button>Login</button>
