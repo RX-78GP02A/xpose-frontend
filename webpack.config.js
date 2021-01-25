@@ -38,7 +38,7 @@ module.exports = {
       }
     ]
   },
-  mode: 'development',
+  mode: 'production',
   plugins: [
     new HtmlWebpack({
       template: './public/index.html'
