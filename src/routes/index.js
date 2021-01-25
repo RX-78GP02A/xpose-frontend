@@ -23,7 +23,7 @@ export default () => {
   const authRoutes = {
     '/': LoginPage,
     '/register': RegisterPage,
-    '/home': HomePage
+ //   '/home': HomePage
   };
 
   const getCookie = (name) => {
@@ -87,7 +87,7 @@ export default () => {
       </Switch>
     )
   }
-  if (logCheck) {
+  //if (logCheck) {
     if (!(location.pathname in authRoutes)) return <Redirect to='/' />
     return (
       <Switch>
@@ -102,6 +102,6 @@ export default () => {
         </Route>
       </Switch>
     )
-  }
+//  }
   return ''
 };
