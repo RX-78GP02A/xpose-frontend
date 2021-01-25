@@ -111,9 +111,9 @@ export default ({ postId }) => {
         })
         resp.data.contents.user = {
           1: {
-            username: 'akshayalenchery',
-            firstname: 'Akshay',
-            lastname: 'Alenchery',
+            username: 'Creator',
+            firstname: 'Marcus',
+            lastname: 'Ridley',
             avatar: ''
           }
         }
