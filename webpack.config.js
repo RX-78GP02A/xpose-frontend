@@ -46,8 +46,8 @@ module.exports = {
   ],
   devServer: {
     proxy: {
-      '/xpose/api': {
-        target: 'https://still-taiga-03494.herokuapp.com/',
+      'https://still-taiga-03494.herokuapp.com': {
+        target: 'https://still-taiga-03494.herokuapp.com',
         changeOrigin: true
       }
     },
