@@ -22,7 +22,8 @@ export default () => {
   const location = useLocation()
   const authRoutes = {
     '/': LoginPage,
-    '/register': RegisterPage
+    '/register': RegisterPage,
+    '/home': HomePage
   };
 
   const getCookie = (name) => {
