@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import Avatar from '../../assets/images/avatar.jpg';
 import { BASE_URL } from '../../config';
 import './style.css';
-
 import { Context as NotificationContext } from '../../context/Notification';
 import { Context as AuthContext } from '../../context/Auth';
 import { Context as PostContext } from '../../context/Post';
