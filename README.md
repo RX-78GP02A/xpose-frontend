@@ -9,11 +9,14 @@ Client Repo: https://github.com/RX-78GP02A/xpose-frontend
 Live Link: https://xpose.dev/
 
 ## Summary
-![Image 2](https://user-images.githubusercontent.com/67432727/105892656-27cd2180-5fe0-11eb-8b9c-738787251040.jpeg)
 
 As a photo and photography hobbyist xpose has arrived to fit the needs of users with like mindedness. xpose is a photo journalism paltform to bring creativity togther.
 
 Once you enter xpose; the application will allow a user to register, to login, create a profile picture (.jpg and jpeg only), change a profile picture (.jpg and jpeg only), create a picture post (.jpg and jpeg only), search for users, follow a user, check for users that are following you, change user password, create a bio,and (in future builds) fully comment on a users post.
+
+![Image 4](https://user-images.githubusercontent.com/67432727/105893413-0f113b80-5fe1-11eb-9406-0b27c2b239fd.jpeg)
+
+![Image 3](https://user-images.githubusercontent.com/67432727/105893422-11739580-5fe1-11eb-8127-2139f2bf86b1.jpeg)
 
 ## Technologies Used
 
