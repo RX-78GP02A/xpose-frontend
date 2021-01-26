@@ -18,3 +18,7 @@ Live Link: https://xpose.dev/#/
 * React
 * React-Router
 * Context
+
+## Server
+
+ * PostgreSQL
