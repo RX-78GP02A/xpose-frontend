@@ -16,6 +16,7 @@ Live Link: https://xpose.dev/
 ### FrontEnd
 
 * JavaScript
+* CSS
 * React
 * React-Router
 * Context
