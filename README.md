@@ -8,6 +8,8 @@ Client Repo: https://github.com/RX-78GP02A/xpose-frontend
 
 Live Link: https://xpose.dev/#/
 
+## Summary
+
 ## Technologies Used
 
 ### FrontEnd
