@@ -24,8 +24,14 @@ Once you enter xpose; the application will allow a user to register, to login, c
 
 ## Server
 
- * PostgreSQL
+* PostgreSQL
 
+## Deployment
+
+ * Vercel (client)
+ * Heroku (server)
+ * AWS S3 Bucket (for photo storage)
+ 
 
 ## Future Features (V2)
 
