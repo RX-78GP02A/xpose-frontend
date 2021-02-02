@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 
-import { LOGIN_USER, LOGOUT_USER, UPDATE_AUTH_USER } from '../context/actionTypes';
+import { LOGIN_USER, LOGOUT_USER, UPDATE_AUTH_USER } from './actionTypes';
 
 const reducer = (state, payload) => {
   console.log(payload)
